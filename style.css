@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 body {
@@ -14,6 +15,7 @@ body {
     background: #fff;
     display: flex;
     justify-content: center;
+    height: 200px;
 }
 
 .header h1 {
@@ -35,27 +37,40 @@ body {
 
 } */
 
+.category-shown {
+    background: #fff;
+    width: 20%;
+    height: 100px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
 .category {
     font-size: 1.5rem;
     line-height: 1.5;
     border-radius: 30px;
     width: 35%;
-    height: 45vh;
+    height: 450px;
     background: #fff;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    position: relative;
 }
 
-.category .text-area {
+
+.text-area {
     height: 75%;
-    padding: 30px;
+    margin: 30px 100px 30px 30px;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.category button {
+.generator {
     font-size: 1.2rem;
+    color: #fff;
     font-family: "Fjalla One", sans-serif;
-    background: lightblue;
+    background: rgb(80, 80, 80);
     padding: 10px;
     border: 1px solid rgba(0,0,0, 0.1);
     border-radius: 5%;
@@ -64,15 +79,60 @@ body {
     outline: none;
 }
 
+.exit {
+    font-size: 1rem;
+    color: #fff;
+    background: rgb(220, 0, 0);
+    border: 1px solid rgba(0,0,0, 0.1);
+    width: 35px;
+    padding: 7px;
+    border-radius: 50%;
+    align-self: center;
+    margin: 25px;
+    outline: none;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
 img[src="tinderlogo.png"] {
     max-width: 175px;
     margin-bottom: 10px;
 }
 
-button:hover {
+.generator:hover {
     padding: 12px;
 }
 
 button:active {
-    background: lightcyan;
+    background: rgb(120, 120, 120);
 }
+
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation-duration: 2s;
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.3em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.3em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
