@@ -1,28 +1,48 @@
 html {
     box-sizing: border-box;
-    overflow: hidden;
 }
 
 body {
     background: #333333;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    font-family: "Fjalla One", sans-serif;
     margin: 0 auto;
 }
 
+
 .header {
+    font-family: "Fjalla One", sans-serif;
     background: #fff;
     display: flex;
     justify-content: center;
-    height: 200px;
+    height: 160px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1.5rem;
+    padding: 12px;
+    color: #777;
+    background: #fff;
 }
 
 .header h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     text-shadow: 5px 5px 5px rgba(0,0,0, 0.1);
     text-transform: uppercase;
     text-align: center;
+}
+
+.cat-title {
+    grid-area: title;
+    grid-column: 1 / -1;
+    margin: auto;
 }
 
 .content {
@@ -61,22 +81,28 @@ body {
     width: 35%;
     height: 80%;
     background: #fff;
-    display: flex;
+    display: grid;
+    grid-template-areas: 
+    'title exit'
+    'text-area text-area'
+    'btn btn';
+    grid-gap: 20px;
     text-align: center;
-    flex-direction: column;
     overflow: hidden;
     position: relative;
 }
 
 
 .text-area {
-    height: 75%;
-    margin: 30px 100px 30px 30px;
+    grid-area: text-area;
+    height: 100px;
+    margin: 30px 50px 0px 30px;
     border-right: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 20px;
+    padding: 10px;
 }
 
 .generator {
+    grid-area: btn;
     font-size: 1.2rem;
     color: #fff;
     font-family: "Fjalla One", sans-serif;
@@ -90,6 +116,7 @@ body {
 }
 
 .exit {
+    grid-area: 'exit';
     font-size: 1rem;
     color: #fff;
     background: rgb(220, 0, 0);
@@ -102,7 +129,7 @@ body {
     outline: none;
     position: absolute;
     right: 10px;
-    top: 30px;
+    top: 5px;
 }
 
 img[src="tinderlogo.png"] {
@@ -110,8 +137,12 @@ img[src="tinderlogo.png"] {
     margin-bottom: 10px;
 }
 
+img[src="PML.png"] {
+    max-width: 150px;
+}
+
 .generator:hover {
-    padding: 12px 17px;
+    background: rgb(120, 120, 120);
 }
 
 button:active {

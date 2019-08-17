@@ -1,10 +1,10 @@
+const choices = document.querySelector('.category');
+const displayBox = document.querySelector('.display-box');
+const displayTitle = document.querySelector('.cat-title');
 const genBtn = document.querySelector('.generator');
 const textArea = document.querySelector('.text-area');
 const exitBtn = document.querySelector('.exit');
 
-const displayBox = document.querySelector('.display-box');
-const displayText = document.querySelector('.cat-title');
-const choices = document.querySelector('.category');
 
 genBtn.addEventListener('click', btn => {
     var jokesNum = Math.floor(Math.random() * jokes.length);
@@ -22,5 +22,5 @@ exitBtn.addEventListener('click', btn => {
 choices.addEventListener('click', btn => {
     displayBox.classList.remove('zoomOut');
     displayBox.classList.add('zoomIn');
-    displayText.textContent = choices.textContent;
+    displayTitle.textContent = choices.textContent;
 });
