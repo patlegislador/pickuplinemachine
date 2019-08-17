@@ -1,14 +1,19 @@
-const jokes = [
-    "Are you French because Eiffel for you.",
-    "I must be a snowflake, because I've fallen for you.",
-    "Hello, I'm a thief, and I'm here to steal your heart.",
-    "Are you cake? Cause I want a piece of that.",
-    "If nothing lasts forever, will you be my nothing?",
-    "Are you from Tennessee? Because you're the only 10 I see!",
-    "What has 36 teeth and holds back the Incredible Hulk? My zipper.",
-    "Are you lost ma'am? Because heaven is a long way from here.",
-    "If you were a steak you would be well done.",
-    "Life without you is like a broken pencil... pointless.",
+
+const cheesies = [
+"Are you French because Eiffel for you.",
+"I must be a snowflake, because I've fallen for you.",
+"Hello, I'm a thief, and I'm here to steal your heart.",
+"Are you cake? Cause I want a piece of that.",
+"If nothing lasts forever, will you be my nothing?",
+"Are you from Tennessee? Because you're the only 10 I see!",
+"What has 36 teeth and holds back the Incredible Hulk? My zipper.",
+"Are you lost ma'am? Because heaven is a long way from here.",
+"If you were a steak you would be well done.",
+"Life without you is like a broken pencil... pointless."
+];
+
+
+const dirties = [
     "Even if there wasn't gravity on earth, I'd still fall for you.",
     "Roses are red, violets are blue, how would you like it if I came home with you?",
     "I wish I were cross-eyed so I can see you twice",
@@ -23,7 +28,10 @@ const jokes = [
     "Are you Israeli? Cause you Israeli hot.",
     "On a scale from 1 to 10, you're a 9, and I'm the 1 you need.",
     "If I could rearrange the alphabet I would put U and I together.",
-    "Is your name Google? Because you've got everything I'm searching for.",
+    "Is your name Google? Because you've got everything I'm searching for."
+];
+
+const smartsies = [
     "I’ve been wondering, do your lips taste as good as they look.",
     "If you were a triangle you'd be acute one.",
     "If beauty were time, you’d be eternity.",
