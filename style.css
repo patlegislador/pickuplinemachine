@@ -26,8 +26,8 @@ body {
     width: 100%;
     text-align: center;
     font-family: 'Tajawal', sans-serif;
-    font-size: 1.5rem;
-    padding: 12px;
+    font-size: 1.5em;
+    padding: 5px;
     color: #777;
     background: #fff;
 }
@@ -50,7 +50,7 @@ body {
 .cat-title {
     grid-area: title;
     grid-column: 1 / span 2;
-    margin: auto;
+    margin: 10px;
 }
 
 .content {
@@ -97,7 +97,6 @@ body {
     position: relative;
 }
 
-
 .text-area {
     font-size: 1em;
     grid-area: text-area;
@@ -127,15 +126,15 @@ body {
     color: #fff;
     background: rgb(220, 0, 0);
     border: 1px solid rgba(0,0,0, 0.1);
-    width: 35px;
+    width: 33px;
     padding: 7px;
     border-radius: 50%;
     align-self: center;
-    margin: 25px;
+    margin: 30px;
     outline: none;
     position: absolute;
     right: 10px;
-    top: 5px;
+    top: 0px;
 }
 
 img[src="tinderlogo.png"] {
@@ -188,7 +187,7 @@ button:active {
 
 @media (max-width: 1000px) {
     .display-box {
-        width: 60%;
+        width: 50%;
     }
 
     .category {
@@ -248,7 +247,7 @@ button:active {
     }
 
     .text-area {
-        height: 50%;
+        height: 90px;
     }
 }
 
